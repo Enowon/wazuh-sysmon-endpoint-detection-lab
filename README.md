@@ -16,7 +16,21 @@ In this setup:
 This lab demonstrates **host-based detection, process monitoring, registry monitoring, file activity monitoring, and SIEM rule analysis**.
 
 ---
+## Project Summary
 
+In this project, I built a small SOC monitoring environment to understand how endpoint activity is collected, analyzed, and detected using a SIEM.
+
+The lab simulates several suspicious activities including:
+
+- Encoded PowerShell execution
+- Registry persistence modification
+- Suspicious executable file creation
+
+Telemetry was collected using Sysmon and forwarded to the Wazuh SIEM for analysis and alert generation.
+
+This project helped me understand how SOC analysts investigate endpoint events and tune detection rules.
+
+---
 # Lab Architecture
 
 ```

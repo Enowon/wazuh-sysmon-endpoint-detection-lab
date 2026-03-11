@@ -1,1 +1,7 @@
-
+<group name="sysmon,file_creation">
+  <rule id="100010" level="10">
+    <if_sid>61613</if_sid>
+    <field name="data.win.eventdata.targetFilename">C:\\Users\\Public\\evil.exe</field>
+    <description>Custom detection: suspicious executable dropped in Public folder</description>
+  </rule>
+</group>
